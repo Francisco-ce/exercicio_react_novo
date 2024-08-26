@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import styles from './Formulario.module.css'
+
 
 const Formulario = () => {
 
@@ -26,18 +28,18 @@ const Formulario = () => {
 
 
     return (
-        <form>
-            <div>
-                <label>Digite seu peso:</label>
-                <input onChange={({target}) => setNumero1(parseFloat(target.value))}  type="number" placeholder="kg" required/>
+        <form className={styles.form}>
+            <div className={styles.centraliza}>
+                <label className={styles.label}>Digite seu peso:</label>
+                <input className={styles.info} onChange={({target}) => setNumero1(parseFloat(target.value))}  type="number" placeholder="kg" required/>
             </div>
-            <div>
-                <label>Digite sua altura:</label>
-                <input onChange={({target}) => setNumero2(parseFloat(target.value))} type="number" placeholder="metros" required/>
+            <div className={styles.centraliza}>
+                <label className={styles.label}>Digite sua altura:</label>
+                <input className={styles.info} onChange={({target}) => setNumero2(parseFloat(target.value))} type="number" placeholder="metros" required/>
             </div>
-            <>
+            <div className={styles.resultado}>
                 {funcaoSet()}
-            </>
+            </div>
         </form>
     )
 }

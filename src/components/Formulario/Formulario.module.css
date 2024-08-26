@@ -1,0 +1,29 @@
+form {
+    background-color: #c44569;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.centraliza {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.label {
+    color: white;
+    padding: 10px 0;
+}
+
+.info {
+    border: none;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    padding: 10px 0;
+}

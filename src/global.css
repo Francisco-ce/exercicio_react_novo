@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+button {
+    border: none;
+    background-color: #c44569;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: larger;
+    cursor: pointer;
+}
